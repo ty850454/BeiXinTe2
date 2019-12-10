@@ -1,0 +1,12 @@
+package com.bxtsy.web.dao.repository;
+
+import com.bxtsy.web.dao.entity.ProductDO;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductRepository extends JpaRepository<ProductDO, Long> {
+
+    Page<ProductDO> findAllByOrderByCreateTimeDesc(Pageable page);
+
+}

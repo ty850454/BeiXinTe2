@@ -1,0 +1,15 @@
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://rm-bp1jt59q6mk0v280fxo.mysql.rds.aliyuncs.com/bxt
+    username: root
+    password: Ty850454
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    generate-ddl: true
+    show-sql: true
+server:
+  port: 9080
+  servlet:
+    context-path: /api
